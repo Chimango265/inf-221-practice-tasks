@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Registration form</title>
+        <!-- Include CSS File Here -->
+        <link rel="stylesheet" href="form.css"/>
+    </head>
+
+    <body>
+        <div class="container">
+
+            <div class="section" style="width: 80%">
+                <div class="main">
+                    <h2>Registration Form</h2>
+                    <form action="#" method="post" name="form_name" id="form_id" class="form_class">
+                        <label>Username :</label>
+                        <input type="text" name="username" id="username" placeholder="Your username..." />
+                        <label>Firstname :</label>
+                        <input type="text" name="firstname" id="firstname" placeholder="Your  firstname..." />
+                        <label>Lastname :</label>
+                        <input type="text" name="lastname" id="lastname" placeholder="Your  lastname..." />
+                        <label>Email :</label>
+                        <input type="text" name="email" id="email" placeholder="Your valid email..." />
+                        <input type="button" name="submit_id" id="btn_id" value="Register" />
+                    </form>
+                </div>
+            </div>
+
+            <div class="section" style="width: 80%; margin-top: 5%;">
+                <h2>
+                    Registered Users
+                    <span>
+                        <button id="list">List Users</button>
+                        <button id="clear">Clear</button>
+                    </span>
+                </h2>
+                <ul id="list_of_users"></ul>
+            </div>
+            <!-- Include JS scripts down between Here -->
+        </div>
+    </body>
+</html>
