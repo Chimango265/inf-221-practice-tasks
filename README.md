@@ -23,6 +23,7 @@ HTML DOM, IIFE, JS Modules &amp; Web APIs - LocalStorage
     a. create utils.js file in the root project folder in which all these methods will be wrtten.
 
     b. to check if all form fields have been filled:
+
         const validation = (...fields) => {
             // check which fields are empty
             const isSomeEmpty = fields.some(field => field === '');
@@ -36,6 +37,7 @@ HTML DOM, IIFE, JS Modules &amp; Web APIs - LocalStorage
         }
 
     c. to set to null all form fields after form submission:
+
         const nullify = (fields) => {
             if (fields.length !== 0) {
                 fields.map(field => {
@@ -45,6 +47,7 @@ HTML DOM, IIFE, JS Modules &amp; Web APIs - LocalStorage
         }
 
     d. to clear localStorage store, when user clicks clear button:
+    
         const clearAll = () => {
             // localStorage
             var storage = window.localStorage.getItem('users');
