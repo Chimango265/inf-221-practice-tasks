@@ -1,3 +1,4 @@
+// form input fields validation
 const validation = (...fields) => {
     // check which fields are empty
     const isSomeEmpty = fields.some(field => field === '');
@@ -9,6 +10,8 @@ const validation = (...fields) => {
         return true;
     }
 }
+
+// set all form fields to null
 const nullify = (fields) => {
     if (fields.length !== 0) {
         fields.map(field => {
@@ -16,6 +19,8 @@ const nullify = (fields) => {
         });
     }
 }
+
+// clear users from storage
 const clearAll = () => {
     // localStorage
     var storage = window.localStorage.getItem('users');
