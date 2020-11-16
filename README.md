@@ -176,3 +176,42 @@ HTML DOM, IIFE, JS Modules &amp; Web APIs - LocalStorage
 
                 }
             }
+
+5. JS Modules - export & import
+Even after adding all the required functions we still get "undefined function" errors. If you check the functions in the utils.js file, none has been exported. Also none has been imported in the form.js file so that they can be used.
+    
+    a. export each function from the utils.js by adding an export keyword before each declaration like so:
+
+        export const validation = (...fields) => { /* everything here */ }
+
+        export const nullify = (fields) => { /* everything here */ }
+
+        export const clearAll = () => { /* everything here */ }
+
+    b. note that a module can only contain ONE default export.Therefore, export validation methothd as a default by adding below line after its declaration, like so:
+
+        const validation = (...fields) => {
+            // check which fields are empty
+            const isSomeEmpty = fields.some(field => field === '');
+
+            if(isSomeEmpty){
+                alert("Please fill all fields...!!!!!!");
+                return false;
+            } else {
+                return true;
+            }
+        }
+
+        // add this line
+        export default validation;
+
+    c. then import wherever they are needed i.e inside the form.js file. On the first line in the file. like so:
+
+        import { validation, nullify, clearAll } from './utils.js'; 
+
+        or 
+
+        import { default as validation, nullify, clearAll } from './utils.js';
+
+
+6. 
