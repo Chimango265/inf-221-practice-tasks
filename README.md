@@ -11,3 +11,12 @@ HTML DOM, IIFE, JS Modules &amp; Web APIs - LocalStorage
     <label>Email :</label>
     <input type="text" name="email" id="email" placeholder="Your valid email..." />
 
+2. Including external files to HTML document
+    a. Create form.js file in the same project folder
+    b. Include it in the index.html as below
+                </body>
+            <!-- Include JS File Here -->
+            <script src="form.js" type="module" lang="javascript"></script>
+        </html>
+
+3. 
