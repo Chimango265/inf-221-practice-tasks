@@ -1,4 +1,13 @@
+// import { validation, nullify, clearAll } from './utils.js';
+// or as default
+// import validation, { nullify, clearAll } from './utils.js';
+// or as default
 import { default as validation, nullify, clearAll } from './utils.js';
+/**
+ * any of the above syntax to import a module function should work
+ * if everything has been exported accordingly
+ * as indicated in the writeup
+ */
 
 // function stores user to storage
 const storeUser = (user) => {
