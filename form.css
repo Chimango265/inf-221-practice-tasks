@@ -62,3 +62,17 @@ label{
 #btn_name,#btn_tag{
     margin-left: 10px;
 }
+
+ul {
+    list-style: none;
+}
+
+ul li::before {
+    content: "✅";
+    display: inline-block;
+    margin-right: 0.2rem;
+}
+
+ul li:nth-child(even) {
+    background-color: #4f4f4f;
+}

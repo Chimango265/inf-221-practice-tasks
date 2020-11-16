@@ -214,4 +214,5 @@ Even after adding all the required functions we still get "undefined function" e
         import { default as validation, nullify, clearAll } from './utils.js';
 
 
-6. 
+6. Final Errors
+Every time users are loaded, the list is duplicated when creating new element and appending to the page's unordered list. Resolve this error by making sure we only add a single element to the list. (You can do it on your own time)

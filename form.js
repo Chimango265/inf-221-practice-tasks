@@ -131,4 +131,7 @@ const loadAndListAllUsers = () => {
     const clear = document.getElementById('clear');
     clear.addEventListener('click', clearAll);
     // reload page after clearing storage
+
+    // load all users to page from local storage
+    loadAndListAllUsers();
 })()
