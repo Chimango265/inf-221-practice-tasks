@@ -1,5 +1,5 @@
 // form input fields validation
-const validation = (...fields) => {
+export const validation = (...fields) => {
     // check which fields are empty
     const isSomeEmpty = fields.some(field => field === '');
 
@@ -11,8 +11,10 @@ const validation = (...fields) => {
     }
 }
 
+export default validation;
+
 // set all form fields to null
-const nullify = (fields) => {
+export const nullify = (fields) => {
     if (fields.length !== 0) {
         fields.map(field => {
             document.getElementById(field).value = '';
@@ -21,7 +23,7 @@ const nullify = (fields) => {
 }
 
 // clear users from storage
-const clearAll = () => {
+export const clearAll = () => {
     // localStorage
     var storage = window.localStorage.getItem('users');
     // check if it exists, then assign users object to an empty array

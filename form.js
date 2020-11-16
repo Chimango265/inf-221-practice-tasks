@@ -1,3 +1,5 @@
+import { default as validation, nullify, clearAll } from './utils.js';
+
 // function stores user to storage
 const storeUser = (user) => {
 
@@ -119,4 +121,5 @@ const loadAndListAllUsers = () => {
 
     const clear = document.getElementById('clear');
     clear.addEventListener('click', clearAll);
+    // reload page after clearing storage
 })()
